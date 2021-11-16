@@ -4215,5 +4215,20 @@
       { "name": "qalarm.wid.js", "url": "widget.js" }
     ],
     "data": [{ "name": "qalarm.json" }]
+  },
+  { "id": "bigtimeclk",
+    "name": "Big Time Clock",
+    "shortName":"Big Time",
+    "icon": "app.png",
+    "version":"0.01",
+    "description": "Displays the time with the hours stacked on top of the minutes",
+    "tags": "clock",
+    "supports": ["BANGLEJS2"],
+    "type": "clock",
+    "readme": "README.md",
+    "storage": [
+      {"name":"bigtimeclk.app.js","url":"app.js"},
+      {"name":"bigtimeclk.img","url":"app-icon.js","evaluate":true}
+    ]
   }
 ]
