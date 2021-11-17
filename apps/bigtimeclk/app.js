@@ -16,7 +16,7 @@ Graphics.prototype.setFontOpenSans = function(scale) {
   weekday[5] = "Fri";
   weekday[6] = "Sat";
   
-  function queueDraw() {
+  function queueDraw() {  
     if(drawTimeout) clearTimeout(drawTimeout);
     drawTimeout = setTimeout(()=> {
       drawTimeout = undefined;
@@ -34,7 +34,7 @@ Graphics.prototype.setFontOpenSans = function(scale) {
     
     // draw hour
     g.setFontAlign(0,0).setFont("OpenSans");
-    g.clearRect(0,y-55,g.getWidth(),g.getHeight());
+    g.clearRect(0,y-60,g.getWidth(),g.getHeight());
     g.drawString(("0"+h).substr(-2),x-15,y-20);
     g.drawString(("0"+m).substr(-2),x-15,y+55);
     
